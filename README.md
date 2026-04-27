@@ -27,6 +27,9 @@
 
 <img width="1600" height="1131" alt="product image" src="https://github.com/yogesh5636/SKILLLAB__PROR_2026_Fusion4/blob/main/images/1A.jpeg" />
 
+**Youtube Link:**
+https://youtu.be/TvZ4hn_NnZQ
+
 ---
 
 ## 1.4 One-Line Pitch
@@ -637,22 +640,18 @@ The exterior was covered in white craft paper. MediDrop branding, slot labels (M
 
 ## 16.2 Build Photos
 
-<!-- Add photos below — replace placeholder text with actual uploaded images -->
 
 **Early concept sketch:**
-![Early Sketch](images/sketch_early.jpg)
+<img alt="image" src="https://github.com/yogesh5636/SKILLLAB__PROR_2026_Fusion4/blob/main/images/7A.jpeg">
 
 **Drum construction:**
-![Drum Build](images/drum_build.jpg)
+<img alt="image" src="https://github.com/yogesh5636/SKILLLAB__PROR_2026_Fusion4/blob/main/images/WhatsApp%20Image%202026-04-27%20at%205.41.01%20PM.jpeg">
 
 **Electronics wiring on breadboard:**
-![Wiring](images/wiring.jpg)
-
-**First integration test:**
-![Integration Test](images/integration_test.jpg)
+<img alt="image" src="https://github.com/yogesh5636/SKILLLAB__PROR_2026_Fusion4/blob/main/images/8A.jpeg">
 
 **Final assembled build:**
-![Final Build](images/final_build.jpg)
+<img alt="image" src="https://github.com/yogesh5636/SKILLLAB__PROR_2026_Fusion4/blob/main/images/WhatsApp%20Image%202026-04-27%20at%205.41.01%20PM.jpeg">
 
 ---
 
