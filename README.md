@@ -25,8 +25,7 @@
 
 > *Your personal, automated medication dispenser — with a personality that refuses to be ignored.*
 
-<!-- Add your project logo or hero image below -->
-![MediDrop Hero Image](images/hero.png)
+<img width="1600" height="1131" alt="product image" src="" />
 
 ---
 
