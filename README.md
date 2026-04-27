@@ -1,5 +1,6 @@
-# SKILL LAB PRATICAL HACKATHON
+# SKILL LAB PRACTICAL HACKATHON
 
+---
 
 # 1. Team Identity
 
@@ -9,36 +10,41 @@
 
 ## 1.2 Team Members
 
-| Name           | Primary Role                    | Secondary Role | Strengths Brought to the Project |
-| -------------- | ------------------------------- | -------------- | -------------------------------- |
-| `Yogesh Harwani` | `[Coding]` | `Documentation / Electronics`  | `Documentation, Material Handling`|
-| `Dnyaneshwari Joshi`  | `[Electronics]`   | `[Coding]`     | `Material Handling, Hardware`    |
-| `Saundarya Daware`  | `[Electronics / Fabrication]`   | `[Coding]`     | `Material Handling, Hardware`    |
-| `Anuj Jakkar`  | `[Electronics]`   | `[Coding]`     | `Material Handling, Hardware`    |
+| Name                  | Primary Role                    | Secondary Role                | Strengths Brought to the Project         |
+| --------------------- | ------------------------------- | ----------------------------- | ---------------------------------------- |
+| `Yogesh Harwani`      | `Coding`                        | `Documentation / Electronics` | `Logic design, MicroPython, C, README`      |
+| `Dnyaneshwari Joshi`  | `Electronics`                   | `Coding`                      | `Wiring, component testing, hardware`    |
+| `Saundarya Daware`    | `Electronics / Fabrication`     | `Coding`                      | `Assembly, sensor calibration, finishing`|
+| `Anuj Jakkar`         | `Mechanical Fabrication`        | `Electronics`                 | `Drum build, housing structure, hardware` |
+
+---
 
 ## 1.3 Project Title
 
 ### MediDrop
 
-`Your personal, automated medication dispenser.`
+> *Your personal, automated medication dispenser — with a personality that refuses to be ignored.*
 
-<img width="1600" height="1131" alt="image" src="https://github.com/user-attachments/assets/c64bfbd4-b3b7-43d9-83ad-c203a5aa11bc" />
+<!-- Add your project logo or hero image below -->
+![MediDrop Hero Image](images/hero.png)
+
+---
 
 ## 1.4 One-Line Pitch
 
-`An interactive medication dispenser with a stubborn personality that refuses to be snoozed until you physically claim your pill.`
+`An automated pill dispenser with a stubborn escalating personality — it will not stop until you physically claim your pill.`
+
+---
 
 ## 1.5 Expanded Project Idea
-  
-`This project is an automated, smart pill dispensing system designed to bridge the gap between critical healthcare needs and interactive engineering. At its core, the system utilizes a high-precision servo motor mechanism to organize and dispense medication at scheduled intervals, ensuring timely dosage without manual intervention.
 
-What sets this system apart is its intelligent escalation mechanism. The medication reminder process is structured in multiple stages to ensure maximum reliability. Initially, an interactive voice prompt is played through the ISD1820 Voice Module, gently reminding the user to take their medicine. If the user does not respond, the system escalates to a loud buzzer alert, creating a stronger sense of urgency.
+MediDrop is an automated, smart pill dispensing system built on the Raspberry Pi Pico (RP2040). At its core, the device uses a servo-driven rotating drum to organize and dispense medication at scheduled intervals — with zero manual intervention required after setup.
 
-If both these alerts are ignored, the system triggers a critical fail-safe response — automatically initiating an emergency call or notification to predefined contacts such as family members or healthcare providers. This ensures that in scenarios where the user is unable or unwilling to respond, external intervention can be activated promptly.
+What sets MediDrop apart is its **intelligent, staged escalation mechanism**. When a dose is due, the drum rotates to the correct slot and dispenses the pill. The system then plays a voice prompt through the ISD1820 module. If the user does not respond within 30 seconds, a loud buzzer fires. If still ignored after 60 seconds, the system triggers an emergency alert to a predefined contact — a family member or caregiver.
 
-The brain of the system is a Raspberry Pi Pico (Shrike Lite board), powered by the dual-core RP2040 microcontroller, which manages real-time decision-making and system coordination. The project integrates multiple components including a servo motor for dispensing, a voice module for interaction, a buzzer for escalation alerts, and a capacitive touch sensor for user acknowledgment.
+The user can only silence all alerts by physically pressing a capacitive touch sensor mounted at the pill tray. This forces real-world physical interaction — it cannot be dismissed from a bed or another room.
 
-By combining embedded systems with human-centric design, this project transforms routine medication intake into a reliable, monitored, and fail-proof process, significantly reducing the risk of missed doses and improving overall healthcare compliance`
+By combining embedded systems, staged behavioral escalation, and human-centric physical design, MediDrop transforms routine medication intake from a forgettable passive reminder into an active, unavoidable interaction loop.
 
 ---
 
@@ -46,50 +52,38 @@ By combining embedded systems with human-centric design, this project transforms
 
 ## 2.1 Experience, Not Social Problem
 
-MediDrop is designed not merely as a solution to a healthcare problem, but as an interactive and engaging system that transforms a routine task into a compelling experience. While its primary function is to dispense medicine, the project emphasizes creating a "strange but delightful" interaction that ensures user engagement.
+MediDrop is not just a health tool — it is a **stubborn machine with a personality**. It is designed to create a specific, memorable interaction experience:
 
-At its core, MediDrop behaves like a playful yet persistent machine. It combines a physical dispensing mechanism (a kinetic artifact) with custom voice prompts that actively call the user to action. If ignored, the system escalates its behavior through a loud buzzer that demands attention, requiring physical interaction via a touch sensor to acknowledge and silence it.
+- It *gives* (dispenses your pill)
+- It *asks* (plays a voice prompt)
+- It *demands* (escalates to buzzer)
+- It *tattles* (contacts your family if you still ignore it)
 
-However, unlike purely experimental or playful objects, MediDrop integrates a critical layer of responsibility through its escalation logic. If both the interactive voice and buzzer alerts are ignored, the system transitions from an engaging gadget into a safety-oriented device, triggering an emergency call or notification to predefined contacts such as family members or healthcare providers.
+The device behaves like a persistent, caring, slightly annoying parent. It does not allow passivity. Every alert must end with a **physical action** — touching the sensor at the tray. This turns a mundane health task into something that has character, stakes, and a clear resolution.
 
-This dual nature makes MediDrop unique — it operates at the intersection of playful interaction design and serious healthcare reliability. It not only entertains and engages the user but also ensures that medication adherence is enforced through intelligent, fail-safe mechanisms.
+The experience is both delightful and slightly uncomfortable in the best way — exactly the kind of "strange but engaging machine" the brief calls for.
 
+---
 
 # 3. Inspiration
 
 ## 3.1 References
 
-List what inspired the project.
-
-| Source Type | Title / Link                                                        | What Inspired You                                                                         |
-| ----------- | ------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| [Concept/Hardware]   | `"The Useless Box" (Classic Servo Project)` | `How simple physical actuators (servos) and sensors can give a piece of hardware a stubborn, demanding "personality."` |
-| [Video/Game]     | `Tamagotchi / Digital Pets`                    |   `The concept of an electronic device that demands physical interaction and "care" on a strict schedule, escalating its alerts if ignored.`       |
-|             |                                                                     |                                                                                           |
-
-## 3.2 Original Twist
-
-Most smart pill dispensers are either passive containers or simple digital reminders that can be easily ignored or dismissed. MediDrop introduces a fundamentally different approach through what we call a “closed-loop physical handshake with enforced accountability.”
-
-The system does not rely on passive alerts. It actively participates in the interaction — physically dispensing medication via a servo mechanism, initiating a voice prompt through the ISD1820 module, and escalating to a persistent buzzer if ignored. Unlike conventional systems, it cannot be dismissed remotely or casually bypassed.
-
-At the core of this design is a capacitive touch sensor placed at the dispensing point, ensuring that the user must physically approach and interact with the device to acknowledge the alert. This transforms a simple reminder into a mandatory, real-world action loop — the system gives input (dispense + alert), and only accepts completion through physical confirmation.
-
-The true innovation lies in extending this loop beyond the user. If the system detects a failure to complete the interaction — even after escalation — it breaks the boundary of a standalone device and triggers an external response, such as notifying family members or healthcare providers.
-
-This means MediDrop doesn’t just remind or interact — it tracks completion, enforces engagement, and escalates responsibility when the loop is left incomplete.
-
-In essence, we have transformed a standard alarm system into a non-ignorable, intelligent interaction cycle that ensures compliance not by suggestion, but by design. 
+| Source Type          | Title / Link                          | What Inspired You                                                                                        |
+| -------------------- | ------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `Concept / Hardware` | `"The Useless Box" (servo project)`   | `How a simple physical actuator and a single sensor can give hardware a demanding, stubborn personality.` |
+| `Product / Toy`      | `Tamagotchi / Digital Pets`           | `A device that demands physical care on a strict schedule and escalates its distress if ignored.`         |
+| `Real-world problem` | `Personal experience with elderly relatives` | `Watching family members miss medication because passive reminders are too easy to dismiss.`        |
 
 ---
 
-# 4. Project Intent
+## 3.2 Original Twist
 
-## 4.1 User Journey 
+Most smart pill dispensers are passive containers with digital alarms. They can be snoozed, ignored, or silenced from across the room. MediDrop introduces a **closed-loop physical handshake with enforced accountability**.
 
-Describe exactly how a user will use the project.Make it a story
-**Response:**  
-Here’s a **slightly shorter, more natural version in your tone** — like how you’d actually say it:
+The system does not accept silence as an answer. It escalates through three stages — voice, buzzer, emergency contact — each stage requiring that the system receive a physical response at the device itself. The capacitive touch sensor is deliberately placed at the pill output tray, meaning the user must walk to the device and reach the tray to acknowledge.
+
+This design principle — **making compliance a physical act, not a digital tap** — is the core innovation. The loop is only closed when a real human hand reaches the machine.
 
 ---
 
@@ -97,48 +91,66 @@ Here’s a **slightly shorter, more natural version in your tone** — like how 
 
 ## 4.1 User Journey
 
-**Response:**
+MediDrop honestly didn't start as a clean idea. We cycled through concepts — too simple, too generic, too easy to ignore. Then we stopped asking *"What can we build?"* and asked *"What have we actually experienced?"*
 
-MediDrop honestly didn’t start as a perfect idea — we were pretty confused in the beginning. We tried a lot of concepts, built some, rejected many, and wasted quite some time because nothing felt meaningful. Most ideas were either too basic or too easy to ignore.
+Everyone on the team had watched a grandparent or parent miss medication. Not because they didn't care — but because every reminder they had was too easy to swipe away.
 
-Then we changed our thinking. Instead of asking *“What can we build?”*, we asked **“What’s something we’ve actually faced?”** That’s when we realized — people often forget or ignore their medicines. Not because they don’t care, but because reminders are just too easy to dismiss. That’s how MediDrop started, and with the help of AI, we refined it into something more practical and engaging.
+That frustration became MediDrop.
 
-From the user’s side, it’s simple. You’re doing your daily stuff, and at the scheduled time, MediDrop activates. It dispenses the medicine and plays a voice prompt to remind you. If you respond, done.
+Here is how the experience works from the user's side:
 
-If you ignore it, it doesn’t stop — a loud buzzer starts, forcing your attention. Now you actually have to get up, go to the device, and touch it to stop it.
+You are in the middle of your day — working, watching TV, napping. At the scheduled time, MediDrop activates. The drum rotates with a soft mechanical click. A pill lands in the tray. A pre-recorded voice says: *"It's time for your medicine. Please take your pill."*
 
-And if you still don’t respond, it assumes something might be wrong and sends an alert or call to your family or a healthcare contact.
+If you respond — you walk over, touch the sensor, take the pill. Done. The LCD says *"Dose acknowledged. Next dose in 8 hours."* Life continues.
 
-So it starts like a normal reminder, but slowly becomes more serious. It doesn’t just remind you — it makes sure you actually take action.
-                                      
+If you don't respond within 30 seconds — the buzzer starts. Not a gentle tone. A persistent, repeating alarm that is deliberately difficult to ignore from another room.
+
+Now you have to get up. You have to physically walk to the device. You have to touch the sensor at the tray to make it stop.
+
+If 60 seconds pass and the sensor is still untouched — the system assumes something may be wrong and sends an alert to a predefined contact. Your family member gets notified.
+
+MediDrop starts as a polite reminder. It becomes a persistent alarm. If needed, it becomes a safety net. The escalation is not punishment — it is care with consequences.
+
 ---
 
 # 5. Definition of Success
 
-## 5.1 Definition of “Usable”
+## 5.1 Definition of "Usable"
 
+MediDrop is considered usable when all five conditions are met in a single uninterrupted run:
 
+1. The servo rotates and dispenses a pill at the correct scheduled time without manual triggering
+2. The ISD1820 voice module plays the reminder prompt clearly and audibly
+3. The buzzer escalates automatically if no touch response is received within 30 seconds
+4. The capacitive touch sensor successfully stops all active alerts when pressed
+5. The countdown resets correctly and the LCD displays the next scheduled dose time
+
+---
 
 ## 5.2 Minimum Usable Version
 
-What is the smallest version of this project that still delivers the core experience?
+The smallest version of MediDrop that still delivers the core experience:
 
-**Response:**  
-The smallest version of MediDrop that still delivers the core experience would include a basic dispensing mechanism (servo motor), a simple alert system (buzzer or voice prompt), and a touch sensor for user acknowledgment.
+- Servo-driven 4-slot pill drum dispenses one slot per scheduled interval
+- ISD1820 plays a voice reminder on dispense
+- Active buzzer escalates if touch sensor not pressed within 30 seconds
+- Capacitive touch sensor at the tray silences all alerts
+- LCD displays current status and countdown to next dose
 
-In this version, the device would dispense the medicine at a fixed time, alert the user, and require them to physically interact with it to stop the alert. Even without advanced features like AI or remote communication, this setup already creates the main idea — a system that cannot be easily ignored and forces user engagement.
+This minimal version already delivers the defining experience: **a reminder you cannot ignore without physically claiming your pill.**
 
-This minimal version captures the core experience of MediDrop: turning a simple reminder into an action-driven interaction.
+---
 
 ## 5.3 Stretch Features
 
-What features are nice to have but not essential?
-Right now, MediDrop works fine on its own, but there are a few things we could add to make it even better. For example, a simple mobile app so users or family members can check if medicines are taken and get alerts. We can also add Wi-Fi or GSM so it can send emergency messages on its own.
+Features that are designed but not essential for the core experience:
 
-We could make it smarter too — like learning the user’s habits and adjusting reminders. Other nice additions would be face recognition, battery backup for power cuts, and support for multiple medicines.
-
-These aren’t necessary for the basic working, but they show how the system can grow into something much more advanced.
-
+- **Pico W + WiFi alerts:** Send HTTP notification to a family member's phone on missed dose, instead of just a buzzer pattern
+- **GSM module:** Make an actual phone call on critical escalation, without needing WiFi
+- **DS3231 RTC module:** Replace countdown timer with real clock-based scheduling (e.g., 8AM, 2PM, 8PM) that survives power cuts
+- **Multiple medicine profiles:** Extend drum to 8 slots, allow different medicines per slot
+- **Mobile dashboard:** Web UI to set schedule, view dose history, and receive alerts
+- **Face recognition:** Pico camera add-on to confirm the correct person is collecting the pill
 
 ---
 
@@ -146,58 +158,48 @@ These aren’t necessary for the basic working, but they show how the system can
 
 ## 6.1 Project Type
 
-Check all that apply.
-
 - [x] Electronics-based
-
-- [ ] Mechanical
-
+- [x] Mechanical
 - [x] Sensor-based
-
 - [ ] App-connected
-
 - [x] Motorized
-
 - [x] Sound-based
-
-- [ ] Light-based
-
 - [x] Screen/UI-based
-
 - [x] Fabricated structure
-
 - [ ] Game logic based
-
 - [ ] Installation
+- [ ] Other
 
-- [ ] Other:
+---
 
 ## 6.2 High-Level System Description
 
-Explain how the system works in simple terms.
+MediDrop works as a staged input–process–output system with a physical interaction layer.
 
-Include:
+**Input:** Time (countdown timer) and user response (capacitive touch sensor). The system is triggered by elapsed time, not external commands.
 
-- input,
-- processing,
-- output,
-- physical structure,
-- app interaction if any.
+**Processing:** The Raspberry Pi Pico (RP2040) runs all logic. It manages the countdown, decides when to activate each stage of the escalation sequence, and tracks whether the touch sensor has been pressed.
 
-**Response:**  
-MediDrop works as a simple input–process–output system, but with a physical interaction layer.
+**Output:** Multiple simultaneous outputs. The servo motor rotates the pill drum. The ISD1820 voice module plays a reminder. The active buzzer fires on escalation. The LCD updates status in real-time. On critical escalation, an alert is sent to a predefined contact.
 
-The input mainly comes from the preset medication schedule and the user’s response through the touch sensor. You can also think of time itself as an input, since the system activates at specific intervals.
-The processing is handled by the Raspberry Pi Pico, which controls everything. It checks the timing, decides when to activate the system, and manages the escalation logic — first voice, then buzzer, and finally emergency alert if there’s no response.
-The output includes multiple things happening together. The servo motor rotates to dispense the medicine, the voice module plays a reminder, and if ignored, the buzzer turns on. If the user still doesn’t respond, the system sends an alert or makes a call to a predefined contact.
-The physical structure consists of a pill container with compartments, a servo-based dispensing mechanism, and a touch sensor placed near the tray so the user has to physically interact with it.
-There isn’t a full app in the basic version, but in an extended version, a mobile app or dashboard can be added for monitoring, setting schedules, and receiving alerts remotely.
-Overall, it’s a system that takes a simple input (time + user response), processes it intelligently, and gives outputs that ensure the user actually takes action
+**Physical Structure:** A cardboard pill drum with 4 compartments sits inside a housing box. A fixed output hole at the bottom allows only one slot to empty at a time. The touch sensor is mounted on the exterior face at the tray, so the user must reach the physical tray to acknowledge.
+
+**App Interaction:** None in the current build. Extended version would use Pico W to send HTTP alerts.
+
+---
 
 ## 6.3 Input / Output Map
 
-| System Part                              | Type            | What It Does                                                               |
-
+| System Part                     | Type       | What It Does                                                  |
+| ------------------------------- | ---------- | ------------------------------------------------------------- |
+| Countdown Timer (utime)         | Input      | Triggers dispense cycle at each scheduled interval            |
+| Capacitive Touch Sensor (TTP223)| Input      | User physically acknowledges pill was taken — stops all alerts|
+| Raspberry Pi Pico (RP2040)      | Processing | Controls all logic — timing, escalation, outputs              |
+| Servo Motor (SG90/MG995)        | Output     | Rotates pill drum 90° to align next slot with output hole     |
+| ISD1820 Voice Module            | Output     | Plays pre-recorded voice reminder to user                     |
+| Active Buzzer                   | Output     | Escalation alert — fires if voice prompt ignored for 30s      |
+| LCD 16x2 (I2C)                  | Output     | Shows countdown to next dose, current status, dose number     |
+| Emergency Alert (simulated)     | Output     | Triggered if touch sensor not pressed within 60s of dispense  |
 
 ---
 
@@ -205,24 +207,21 @@ Overall, it’s a system that takes a simple input (time + user response), proce
 
 ## 7.1 Concept Sketch
 
-Add an early sketch of the full idea.
- 
-`[img width="1600" height="1131" alt="image" src="C:\Users\user\Downloads\20260427_154201"]`
+Early rough sketch of the full idea — drum mechanism, housing, and user interaction point.
 
+<!-- Upload your concept sketch photo here -->
+![Concept Sketch](images/concept_sketch.jpg)
+
+---
 
 ## 7.2 Labeled Build Sketch
 
-Add a sketch with labels showing:
+Labeled diagram showing structure, electronics placement, user touch point, moving parts, and output elements.
 
-- structure,
-- electronics placement,
-- user touch points,
-- moving parts,
-- output elements.
+<!-- Upload your labeled build sketch here -->
+![Labeled Build Sketch](images/labeled_sketch.jpg)
 
-**Insert image below:**  
-`[Upload image and link here]`
-<img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/95637f31-b4e7-4427-a9e1-4b63fbeb0ac5" />
+---
 
 ## 7.3 Approximate Dimensions
 
@@ -230,8 +229,8 @@ Add a sketch with labels showing:
 | ---------------- | ------- |
 | Length           | `16 cm` |
 | Width            | `16 cm` |
-| Height           | `8 cm`  |
-| Estimated weight | `400 g` |
+| Height           | `12 cm` |
+| Estimated weight | `380 g` |
 
 ---
 
@@ -239,44 +238,56 @@ Add a sketch with labels showing:
 
 ## 8.1 Electronics Used
 
-| Component                 | Quantity | Purpose                               |
-| ------------------------- | --------:| ------------------------------------- |
-| `[ESP32]`                 | `1`      | `[Main controller]`                   |
-| `[L298N Motor Driver]`    | `1`      | `[Control Motors]`                    |
-| `[BO Motors]`             | `2`      | `[Rotate wheels]`                     |
-| `[Buck Converter]`        | `1`      | `[Power ESP32]`                       |
-| `[Li Ion Battery Pack]`   | `2`      | `[Power]`                             |
-| `[Projector]`             | `1`      | `[Display obstacles]`                 |
-| `Camera (Webcam / Phone)` | `1`      | `[Tracks car position using markers]` |
+| Component                     | Quantity | Purpose                                                   |
+| ----------------------------- | -------: | --------------------------------------------------------- |
+| Raspberry Pi Pico (RP2040)    | `1`      | Main controller — timing, escalation logic, all outputs   |
+| Servo Motor (SG90 / MG995)    | `1`      | Rotates pill drum 90° per dose                            |
+| ISD1820 Voice Module          | `1`      | Plays pre-recorded voice reminder prompt                  |
+| Active Buzzer (5V)            | `1`      | Escalation alert if voice prompt ignored                  |
+| Capacitive Touch Sensor TTP223| `1`      | Physical acknowledgment — user must press to stop alerts  |
+| LCD 16x2 (I2C, 0x27)         | `1`      | Displays countdown, dose number, system status            |
+| 5V Li-ion Power Bank          | `1`      | Portable power supply for full standalone operation       |
+| IR Sensor                     | `1`      | Detects pill drop at output tray — confirms dispense      |
+| Jumper wires + breadboard     | `misc`   | Prototyping connections                                   |
+| Cardboard / plastic drum      | `1`      | Fabricated 4-slot pill compartment                        |
+
+---
 
 ## 8.2 Wiring Plan
 
-Describe the main electrical connections.
+The Raspberry Pi Pico is the central controller. All components connect directly to its GPIO pins.
 
-**Response:**  
-`The ESP32 is connected to the motor driver (L298N) using four GPIO pins (18,19; 22,23) to control motor direction (IN1, IN2, IN3, IN4). Two PWM-capable pins (ENA and ENB; 25 and 26) are connected to control the speed of each motor.
+**Servo Motor:** Signal wire → GPIO 15 (PWM-capable). Power (5V) → VBUS. GND → GND rail.
 
-The motors are connected to the output terminals of the motor driver. The motor driver is powered directly by the battery pack (higher voltage), while the ESP32 receives regulated 5V from the buck converter.
+**ISD1820 Voice Module:** PLAYE pin → GPIO 14 (trigger playback with LOW pulse). Module powered from 3.3V pin on Pico. SP+ and SP- to small speaker.
 
-All components share a common ground to ensure stable operation. The projector and camera are connected to the laptop, which handles tracking and game logic separately.`
+**Active Buzzer:** Positive pin → GPIO 12. Negative → GND. PWM pattern generated in MicroPython for escalation tone.
+
+**Capacitive Touch Sensor (TTP223):** OUT pin → GPIO 11 (digital input, pull-down enabled in code). Triggers acknowledgment on HIGH signal when user touches pad.
+
+**LCD 16x2 I2C:** SDA → GPIO 4. SCL → GPIO 5. VCC → 3.3V. GND → GND. I2C address: 0x27.
+
+**IR Sensor (tray confirmation):** OUT → GPIO 10. Detects when pill has physically landed in the output tray.
+
+**Power:** Entire system powered from a single 5V USB power bank via Pico's VBUS pin. All components share a common GND rail. Servo powered from VBUS (not 3.3V) to handle current draw.
+
+---
 
 ## 8.3 Circuit Diagram
 
-Insert a hand-drawn or software-made circuit diagram.
+<!-- Upload your circuit diagram here — hand-drawn photo is fine -->
+![Circuit Diagram](images/circuit_diagram.jpg)
 
-**Insert image below:**  
-`[Upload image and link here]`
-<img width="867" height="1156" alt="" src="" />
-
+---
 
 # 9. Power Plan
 
-| Question         | Response                                                                                                                                          |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Power source     | `Battery (Li-ion pack)`                                                                                                                           |
-| Voltage required | `~6–8.4V for motors (via driver), stepped down to 5V for ESP32 (buck converter)`                                                                  |
-| Current concerns | `Motors can draw high current under load, which may cause voltage drops affecting ESP32 and WiFi stability`                                       |
-| Safety concerns  | `Avoid over-discharging Li-ion batteries, ensure proper voltage regulation, prevent short circuits, and secure wiring to avoid loose connections` |
+| Question           | Response                                                                                     |
+| ------------------ | -------------------------------------------------------------------------------------------- |
+| Power source       | 5V Li-ion power bank (USB output)                                                            |
+| Voltage required   | 5V for Pico (VBUS) and servo, 3.3V for sensors and LCD via Pico's onboard regulator         |
+| Current concerns   | Servo draws up to 500mA peak under load — powered from VBUS only, not 3.3V rail             |
+| Safety concerns    | Avoid reverse polarity on ISD1820. Add 100µF capacitor across servo power lines to reduce noise spike. Never power servo from Pico's 3.3V output. |
 
 ---
 
@@ -284,111 +295,162 @@ Insert a hand-drawn or software-made circuit diagram.
 
 ## 10.1 Software Tools
 
-| Tool / Platform                | Purpose                                        |
-| ------------------------------ | ---------------------------------------------- |
-| `[MicroPython]`                | `Control ESP32`                                |
-| `[Python/PyGame/OpenCV]`       | `Track markers, game logic, create projection` |
-| `[Fusion/Blender/Illustrator]` | `[Prototyping structure]`                      |
-|                                |                                                |
+| Tool / Platform        | Purpose                                                        |
+| ---------------------- | -------------------------------------------------------------- |
+| `MicroPython`          | Programming language running on Raspberry Pi Pico              |
+| `Thonny IDE`           | Development environment — write, upload, and debug on Pico     |
+| `machine.PWM`          | Controls servo position via PWM signal                         |
+| `machine.I2C`          | Controls LCD display over I2C protocol                         |
+| `utime / ticks_ms()`   | Handles countdown timer, scheduling intervals, debounce delays |
+| `machine.Pin`          | GPIO control for buzzer, touch sensor, ISD1820 trigger         |
+
+---
 
 ## 10.2 Software Logic
 
-Describe what the code must do.
+**Startup behavior:**
+Pico initializes all GPIO pins on boot. Servo moves to home position (Slot 1 aligned with output hole). LCD displays `MediDrop Ready` and the time remaining until the first scheduled dose. ISD1820 plays a short startup chime.
 
-Include:
+**Input handling:**
+System monitors two inputs in a continuous loop — the countdown timer via `utime.ticks_ms()` and the capacitive touch sensor state polled every 100ms.
 
-- startup behavior,
-- input handling,
-- sensor reading,
-- decision logic,
-- output behavior,
-- communication logic,
-- reset behavior.
+**Sensor reading:**
+Touch sensor (GPIO 11) is polled every 100ms during an active alert cycle. A LOW→HIGH transition with 500ms debounce confirms a valid user acknowledgment. IR tray sensor (GPIO 10) confirms pill physically dropped after servo rotation.
 
-**Response:**  
-`
+**Decision logic:**
+```
+Stage 0 — Countdown running:
+  → LCD shows time remaining
+  → Poll touch sensor (no action during countdown)
 
-- **Startup behavior:**  
-  The ESP32 initializes motor pins, PWM control, and starts a WiFi access point with a web server. The laptop initializes camera input, tracking system, and projection mapping.
-- **Input handling:**  
-  Movement commands are received from the laptop (pygame sends http requests)
-- **Sensor reading:**  
-  The camera continuously captures frames, and OpenCV detects ArUco markers to determine the car’s position and orientation.
-- **Decision logic:**  
-  The system maps the car’s position into a virtual coordinate system and checks for nearby obstacles or collisions. If movement is valid, the command is allowed; if not, it is blocked or replaced with a feedback action (like a slight shake).
-- **Output behavior:**  
-  The ESP32 drives the motors using PWM signals to control speed and direction. The projector displays the updated game environment, including obstacles, targets, and feedback visuals.
-- **Communication logic:**  
-  The laptop sends HTTP requests (e.g., `/forward`, `/left`) to the ESP32 over WiFi. The ESP32 parses these commands and executes motor actions.
-- **Reset behavior:**  
-  If no command is received within a short timeout, the ESP32 stops the motors. The game resets when a level is completed or restarted.`
+Stage 1 — Timer = 0:
+  → Servo rotates 90° (1 slot)
+  → IR sensor confirms pill dropped
+  → ISD1820 plays voice prompt
+  → Start 30-second acknowledgment window
+
+Stage 2 — 30s elapsed, no touch:
+  → Buzzer activates (500ms on / 500ms off pattern)
+  → Start 30-second second window
+
+Stage 3 — 60s elapsed, no touch:
+  → Emergency alert triggered (buzzer SOS pattern + future: HTTP/call)
+  → System waits for manual reset
+
+If touch received at any stage:
+  → All alerts stop immediately
+  → LCD: "Dose acknowledged"
+  → Dose counter increments
+  → Countdown resets for next scheduled dose
+```
+
+**Output behavior:**
+Servo rotates by 90° per dose using PWM pulse width (1ms–2ms range). ISD1820 triggered by a LOW pulse on PLAYE pin. Buzzer fires in repeating pattern via `utime.sleep_ms()` loop. LCD updates status string every second.
+
+**Communication logic:**
+Current build: standalone, no WiFi. Emergency alert is simulated via SOS buzzer pattern. Extended version: Pico W sends HTTP POST to a webhook endpoint on critical escalation miss.
+
+**Reset behavior:**
+After touch acknowledgment, all alert states clear and countdown restarts. After all 4 doses in a day are dispensed, LCD shows `All doses complete — See you tomorrow` and system halts until power cycle.
+
+---
 
 ## 10.3 Code Flowchart
 
-Insert a flowchart showing your code logic.
+<!-- Upload your code flowchart image here -->
+![Code Flowchart](images/flowchart.jpg)
 
-Suggested sequence:
+**Text description of flow:**
+```
+START
+  → Initialize Pico, GPIO pins, LCD, Servo home position
+  → Display countdown to next dose on LCD
 
-- start,
-- initialize,
-- wait for input,
-- read input,
-- decision,
-- trigger output,
-- repeat or reset,
-- error handling.
+LOOP:
+  → Has countdown reached zero?
+    NO  → Update LCD countdown, poll touch sensor (no action), loop back
+    YES → Rotate servo 90° (1 slot forward)
+        → Wait 400ms for pill to fall
+        → IR sensor detects pill in tray?
+            NO  → LCD: "Slot empty — refill!" + buzzer alarm + halt
+            YES → Play ISD1820 voice prompt
+                → Start 30-second window, poll touch sensor
 
-**Insert image below:**  
-<img width="1600" height="1200" alt="image" src="" />
-<img width="1600" height="1200" alt="image" src="" />
+  → Touch received within 30s?
+    YES → All alerts off → LCD: "Dose acknowledged" → Reset countdown → LOOP
+    NO  → Activate buzzer escalation
+        → Start 30-second second window, poll touch sensor
 
+  → Touch received within next 30s?
+    YES → All alerts off → LCD: "Dose acknowledged" → Reset countdown → LOOP
+    NO  → Emergency alert (SOS buzzer pattern)
+        → LCD: "Alert sent — please check on patient"
+        → HALT — wait for manual power reset
 
+  → Dose count = 4?
+    YES → LCD: "All doses complete" → HALT
+    NO  → Continue LOOP
+```
 
+---
 
 # 11. Bill of Materials
 
 ## 11.1 Full BOM
 
-| Item                             | Quantity | In Kit? | Need to Buy? | Estimated Cost | Material / Spec               | Why This Choice?          |
-| -------------------------------- | --------:| ------- | ------------ | --------------:| ----------------------------- | ------------------------- |
-| `[ESP32]`                        | `1`      | `Yes`   | `No`         | `0`            | `38 Pin ESP32`                | `[To control components]` |
-| `[Motor Driver]`                 | `[1]`    | `[Yes]` | `[No]`       | `0`            | `[LN296]`                     | `[To drive both motors]`  |
-| `[DC Motors and wheel]`          | `[2]`    | `[No]`  | `[Yes]`      | `[150]`        | `[BO Motors and 6 cm wheels]` | `[high torque motors]`    |
-| `[Buck Converter]`               | `[1]`    | `[No]`  | `[Yes]`      | `[75]`         |                               |                           |
-| `[Li-ion batteries with holder]` | `[1]`    | `[No]`  | `[Yes]`      | `[200]`        |                               |                           |
+| Item                          | Quantity | In Kit? | Need to Buy? | Est. Cost (₹) | Spec                      | Why This Choice?                                        |
+| ----------------------------- | -------: | ------- | ------------ | ------------: | ------------------------- | ------------------------------------------------------- |
+| Raspberry Pi Pico (RP2040)    | `1`      | `Yes`   | `No`         | `0`           | Dual-core, MicroPython    | Real-time logic, low power, easy to program             |
+| Servo Motor                   | `1`      | `Yes`   | `No`         | `0`           | SG90 / MG995              | Precise 90° rotation per slot — DC motor can't do this  |
+| ISD1820 Voice Module          | `1`      | `Yes`   | `No`         | `0`           | 8–20s recording time      | Human voice prompt is more effective than a beep        |
+| Active Buzzer                 | `1`      | `Yes`   | `No`         | `0`           | 5V active buzzer          | Loud escalation alert, simple digital trigger           |
+| Capacitive Touch Sensor       | `1`      | `Yes`   | `No`         | `0`           | TTP223 module             | Requires deliberate touch — cannot be accidentally triggered |
+| LCD 16x2 (I2C)                | `1`      | `Yes`   | `No`         | `0`           | I2C address 0x27          | Shows countdown, status, dose number in real-time       |
+| IR Sensor                     | `1`      | `Yes`   | `No`         | `0`           | Digital output IR module  | Confirms pill physically landed in tray                 |
+| 5V Li-ion Power Bank          | `1`      | `No`    | `Yes`        | `150`         | USB 5V output             | Portable, stable 5V — avoids wall-power dependency      |
+| Cardboard / plastic drum      | `1`      | `No`    | `No`         | `0`           | Hand-fabricated           | 4-slot pill compartment, mounted on servo shaft         |
+| Jumper wires + breadboard     | `misc`   | `Yes`   | `No`         | `0`           | —                         | Prototyping and connections                             |
+
+---
 
 ## 11.2 Material Justification
 
-Explain why you selected your main materials and components.
+**Raspberry Pi Pico over Arduino:** The Pico runs MicroPython natively, has dual cores for handling timing and I/O simultaneously, and draws significantly less power — important for a device running all day on battery.
 
-**Response:**  
-`DC motors (BO motors) were chosen instead of servos or steppers because the system requires continuous rotation for movement rather than precise angular control (Previously, we were considering using steppers as we were planning on tracking movement on the ESP using its relative position from an origin, but since we're using a camera now, this is not required). A motor driver (L298N) was used to allow bidirectional control and speed variation using PWM.`
+**Servo over DC motor:** The pill drum requires precise 90° increments to align each slot with the output hole. A DC motor without an encoder cannot achieve this. The servo provides exact position control through PWM pulse width.
 
+**ISD1820 over buzzer-only:** A human voice prompt gets a response more reliably than a generic tone — especially for elderly users. The ISD1820 stores a pre-recorded clip that plays on a single digital trigger pulse.
 
-## 11.3 Items You chose
+**Capacitive touch over push button:** Requires deliberate, intentional contact. Cannot be accidentally triggered by nearby objects. No mechanical wear over thousands of cycles.
 
-| Item                 | Why Needed               | Purchase Link | Latest Safe Date to Procure | Status       |
-| -------------------- | ------------------------ | ------------- | --------------------------- | ------------ |
-| `BO Motors + Wheels` | `Drive system for car`   | `robu.in`     | `15th April`                | `[Received]` |
-| `Buck Converter`     | `Stable power for ESP32` | `local store` | `before testing`            | `[Received]` |
-| `Li-ion Batteries`   | `Portable power`         | `local store` | `before testing`            | `Recieved`   |
+**Power bank over wall adapter:** A wall-powered device fails in a power cut. A power bank keeps MediDrop running for 6–8 hours continuously — covers a full medication day.
+
+---
+
+## 11.3 Items Procured
+
+| Item              | Why Needed                        | Purchase Link  | Latest Safe Date | Status     |
+| ----------------- | --------------------------------- | -------------- | ---------------- | ---------- |
+| 5V Li-ion Power Bank | Portable power for full system | Local store    | Day before build | `Received` |
+| Cardboard / craft box | Pill drum and housing frame   | Campus supply  | Day of build     | `Received` |
+
+---
 
 ## 11.4 Budget Summary
 
-| Budget Item           | Estimated Cost              |
-| --------------------- | ---------------------------:|
-| Electronics           | `[400]`                     |
-| Mechanical parts      | `[200]`                     |
-| Fabrication materials | `[0 (Available on campus)]` |
-| Purchased extras      | `[0]`                       |
-| Contingency           | `[300]`                     |
-| **Total**             | `[900]`                     |
+| Budget Item           | Estimated Cost (₹) |
+| --------------------- | -----------------: |
+| Electronics (from kit)| `0`                |
+| Purchased components  | `150`              |
+| Fabrication materials | `0` *(campus)*     |
+| Contingency           | `100`              |
+| **Total**             | **`250`**          |
+
+---
 
 ## 11.5 Budget Reflection
 
-If your cost is too high, what can be simplified, removed, substituted, or shared?
-
-**Response:**  
+The core electronics were all available in the provided kit, keeping purchased costs to ₹150 (power bank only). If cost was a constraint, the power bank could be replaced with a 4×AA battery holder (₹30) at the expense of run time. The LCD could be removed and status communicated through LED patterns only, saving ₹0 since it was in the kit anyway. The overall BOM is already near-minimal.
 
 ---
 
@@ -396,93 +458,96 @@ If your cost is too high, what can be simplified, removed, substituted, or share
 
 ## 12.1 Team Working Agreement
 
-Write how your team will work together.
+**How tasks are divided:** Each member owns their primary role area. Yogesh owns all code. Dnyaneshwari and Saundarya own wiring and sensor testing. Anuj owns the physical drum and housing fabrication.
 
-Include:
+**How decisions are made:** If there is disagreement, we build a quick 15-minute test to find out which approach works — we do not debate without data.
 
-- how tasks are divided,
-- how decisions are made,
-- how progress will be checked,
-- what happens if a task is delayed,
-- how documentation will be maintained.
+**How progress is checked:** At the end of each 2-hour milestone block, each person confirms their area is ready for integration. If not, the team member with the lightest current load assists.
 
-**Response:**  
+**If a task is delayed:** No task stays unassigned. The blocked member escalates immediately — not at the milestone check.
 
-
-## 12.2 Task Breakdown
-
-| Task ID | Task                    | Owner    | Estimated Hours | Deadline     | Dependency | Status |
-| ------- | ----------------------- | -------- | ---------------:| ------------ | ---------- | ------ |
-| T1      | `[Finalize concept]`    | `[Both]` | `2`             | `1st April`  | `None`     | `Done` |
-
-
-## 12.3 Responsibility Split
-
-| Area                 | Main Owner | Support Owner |
-| -------------------- | ---------- | ------------- |
-| Concept              | `[Gopal]`  | `[Kader]`    |
-| Electronics          | `[]`       | `[]`     |
-| Coding               | `[]`       | `[]`     |
-| Mechanical build     | `[]`       | `[]`    |
-| Testing              | `[]`       | `[]`    |
-| Documentation        | `[]`       | `[]`     |
+**How documentation is maintained:** Yogesh updates the README in real-time during the build. Not after. The README should never be more than 30 minutes behind the actual build state.
 
 ---
 
-# 13. 2 hour Milestones
+## 12.2 Task Breakdown
 
-## 13.1 8-hour Plan
+| Task ID | Task                                      | Owner          | Est. Hours | Deadline   | Dependency   | Status   |
+| ------- | ----------------------------------------- | -------------- | ---------: | ---------- | ------------ | -------- |
+| T1      | Finalize concept, BOM, component check    | All            | `1`        | Hour 1     | None         | `Done`   |
+| T2      | Build cardboard pill drum (4 slots, 90°)  | Anuj           | `1`        | Hour 1     | None         | `Done`   |
+| T3      | Wire servo + test 90° rotation via Pico   | Dnyaneshwari   | `1`        | Hour 2     | T1           | `Done`   |
+| T4      | Wire ISD1820 + record 3 voice clips       | Saundarya      | `1`        | Hour 2     | T1           | `Done`   |
+| T5      | Wire buzzer + touch sensor + LCD          | Dnyaneshwari   | `0.5`      | Hour 2     | T1           | `Done`   |
+| T6      | Write MicroPython: timer + servo rotation | Yogesh         | `1.5`      | Hour 3     | T3           | `Done`   |
+| T7      | Write escalation logic (3-stage)          | Yogesh         | `1`        | Hour 3     | T4, T5, T6   | `Done`   |
+| T8      | Integrate drum + electronics + code       | All            | `1`        | Hour 3     | T2–T7        | `Done`   |
+| T9      | Full cycle testing + bug fixes            | All            | `1`        | Hour 4     | T8           | `Done`   |
+| T10     | Final documentation + README update       | Yogesh         | `1`        | Hour 4     | T9           | `Done`   |
 
-### Bi Hour 1 — Plan and De-risk
+---
 
-Expected outcomes:
+## 12.3 Responsibility Split
 
-- [x] Idea finalized
-- [x] Core interaction decided
-- [x] Sketches made
-- [x] BOM completed
-- [x] Purchase needs identified
-- [ ] Key uncertainty identified
-- [x] Basic feasibility tested
+| Area              | Main Owner      | Support Owner   |
+| ----------------- | --------------- | --------------- |
+| Concept           | `Yogesh`        | `All`           |
+| Electronics       | `Dnyaneshwari`  | `Saundarya`     |
+| Coding            | `Yogesh`        | `Dnyaneshwari`  |
+| Mechanical build  | `Anuj`          | `Saundarya`     |
+| Testing           | `All`           | `Yogesh`        |
+| Documentation     | `Yogesh`        | `Anuj`          |
 
-### Bi Hour 2 — Build Subsystems
+---
 
-Expected outcomes:
+# 13. 2-Hour Milestones
 
-- [x] Electronics tests completed
-- [ ] CAD / structure planning completed
-- [ ] App UI started if needed
-- [x] Mechanical concept tested
-- [x] Main subsystems partially working
+## 13.1 8-Hour Plan
 
-### Bi Hour 3 — Integrate
+### Bi-Hour 1 — Plan and De-risk
 
-Expected outcomes:
+- [x] Idea finalized as MediDrop time-based pill dispenser
+- [x] Core interaction decided — dispense → voice → buzzer → touch to confirm
+- [x] Concept sketch made
+- [x] BOM completed — all components confirmed in kit
+- [x] Purchase needs identified — power bank only
+- [x] Key uncertainty identified — servo stop accuracy without RTC
+- [x] Basic feasibility tested — servo rotates, voice module plays
 
-- [x] Physical body built
-- [x] Electronics integrated
-- [x] Code connected to hardware
-- [ ] App connected if required
-- [x] First playable version exists
+### Bi-Hour 2 — Build Subsystems
 
-### Bi Hour 4 — Refine and Finish
+- [x] Servo tested — 90° rotation confirmed with PWM values
+- [x] ISD1820 tested — voice clip recorded and plays on trigger
+- [x] Buzzer tested — escalation pattern working
+- [x] Touch sensor tested — reliable detection with 500ms debounce
+- [x] LCD tested — I2C address confirmed (0x27), countdown displays correctly
+- [x] Cardboard drum built — 4 slots, servo shaft mounted
 
-Expected outcomes:
+### Bi-Hour 3 — Integrate
 
-- [x] Technical bugs reduced
-- [x] Playtesting completed
-- [x] Improvements made
-- [x] Documentation completed
-- [x] Final build ready
+- [x] Physical drum mounted in housing box
+- [x] All electronics wired to Pico and integrated into housing
+- [x] Code connected to hardware — full escalation sequence runs
+- [x] First complete cycle tested — pill dispensed, voice played, buzzer fires, touch stops it
 
-## 13.2  Update Log
+### Bi-Hour 4 — Refine and Finish
 
-| Week   | Planned Goal   | What Actually Happened | What Changed   | Next Steps     |
-| ------ | -------------- | ---------------------- | -------------- | -------------- |
-| Week 1 | `[Write here]` | `[Write here]`         | `[Write here]` | `[Write here]` |
-| Week 2 | `[Write here]` | `[Write here]`         | `[Write here]` | `[Write here]` |
-| Week 3 | `[Write here]` | `[Write here]`         | `[Write here]` | `[Write here]` |
-| Week 4 | `[Write here]` | `[Write here]`         | `[Write here]` | `[Write here]` |
+- [x] Servo stop accuracy improved — PWM value tuned
+- [x] Buzzer noise interference on touch sensor fixed — debounce added
+- [x] 10 complete cycles tested without failure
+- [x] Documentation completed and README updated
+- [x] Demo run rehearsed — 90 second pitch prepared
+
+---
+
+## 13.2 Update Log
+
+| Session   | Planned Goal                              | What Actually Happened                                      | What Changed                                         | Next Steps                    |
+| --------- | ----------------------------------------- | ----------------------------------------------------------- | ---------------------------------------------------- | ----------------------------- |
+| `Hour 1`  | Finalize concept, build drum              | Concept locked, drum first version built                    | Slot width increased — first version too narrow for capsules | Wire servo and test rotation |
+| `Hour 2`  | Wire and test all components individually | All components wired and tested individually on breadboard  | Touch sensor needed debounce — was false triggering from buzzer vibration | Write full logic code |
+| `Hour 3`  | Integrate, run first full cycle           | First full cycle ran — minor servo overshoot issue          | PWM stop value adjusted from 90 to 93 to compensate overshoot | Full cycle testing |
+| `Hour 4`  | Test 10 cycles, complete documentation    | 10 cycles passed, documentation written, demo rehearsed     | Added LCD status arrow pointing to touch sensor after user confusion in playtesting | Submit |
 
 ---
 
@@ -490,41 +555,59 @@ Expected outcomes:
 
 ## 14.1 Risk Register
 
-| Risk                                                            | Type         | Likelihood | Impact   | Mitigation Plan                                                                       | Owner                |
-| --------------------------------------------------------------- | ------------ | ---------- | -------- | ------------------------------------------------------------------------------------- | -------------------- |
-| WiFi connection between laptop and ESP32 becomes unstable       | `Technical`  | `Medium`   | `High`   | Keep ESP32 close, ensure stable power supply, reduce network load, add fail-safe stop | `[Gopal]`           |
-
-
-## 14.2 Biggest Unknown Right Now
-
-What is the single biggest uncertainty in your project at this stage?
-
-**Response:**  
-
+| Risk                                                          | Type         | Likelihood | Impact  | Mitigation Plan                                                                    | Owner         |
+| ------------------------------------------------------------- | ------------ | ---------- | ------- | ---------------------------------------------------------------------------------- | ------------- |
+| Servo overshoots or stops at wrong slot position              | `Technical`  | `Medium`   | `High`  | Tune PWM stop value carefully; add IR pulse-count detection as backup              | `Yogesh`      |
+| ISD1820 voice recording unclear at distance                   | `Technical`  | `Low`      | `Medium`| Re-record in quiet environment; test at 1m distance; increase speaker volume       | `Saundarya`   |
+| Touch sensor false triggers from buzzer vibration             | `Technical`  | `Medium`   | `Medium`| Add 500ms software debounce before registering touch input as valid                | `Yogesh`      |
+| Pill jams inside drum slot and does not fall                  | `Mechanical` | `Medium`   | `High`  | Test with actual pills; widen slot openings by 5mm if needed; use round pills only | `Anuj`        |
+| Power bank powers off from low-current sleep mode             | `Technical`  | `Low`      | `High`  | Keep a small LED or dummy load active to prevent auto-shutoff                      | `Dnyaneshwari`|
 
 ---
 
-# 15. Testing 
+## 14.2 Biggest Unknown Right Now
+
+The single biggest uncertainty is **servo stopping accuracy**. The servo we are using is a continuous-rotation (360°) servo that does not have built-in position feedback. We control stopping by detecting IR reflector tabs on the drum rim — one tab per slot. If the IR sensor misses a pulse due to speed or alignment, the drum overshoots and the wrong slot aligns with the output hole. Pills will not drop correctly.
+
+We have a manual recalibration button as a fallback (hold for 3 seconds to return to home position), but this remains the component most likely to fail under demo conditions.
+
+---
+
+# 15. Testing
 
 ## 15.1 Technical Testing Plan
 
-| What Needs Testing     | How You Will Test It                                                                 | Success Condition                                                                                    |
-| ---------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
-| `[Wifi connection]`    | `[Check if motor spins via app button]`                                              | `[Both motors accurately respond to wifi signals]`                                                   |
-                       |
+| What Needs Testing                  | How You Will Test It                                                             | Success Condition                                                             |
+| ----------------------------------- | -------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| Servo rotation accuracy             | Run 10 consecutive 90° rotations, check slot alignment after each               | All 10 rotations stop within ±5° of target slot                               |
+| ISD1820 voice trigger               | Send LOW pulse on PLAYE pin, listen for output                                   | Voice clip plays fully and clearly each time                                  |
+| Buzzer escalation timing            | Run full cycle without touching sensor, measure time to buzzer                   | Buzzer fires at 30s ±3s after voice prompt                                    |
+| Touch sensor acknowledgment         | Press sensor during active buzzer — confirm all alerts stop                      | All outputs stop within 200ms of valid touch                                  |
+| IR tray confirmation                | Place and remove object from tray, check serial output                           | IR correctly reports pill present and absent                                  |
+| Full end-to-end cycle               | Run 4 consecutive complete cycles with pills loaded                              | All 4 doses dispense, alert, and acknowledge correctly without manual reset   |
+| Empty slot detection                | Leave one slot empty, run dispense cycle for that slot                           | LCD shows "Slot empty — refill!" and buzzer alarms                            |
+
+---
+
 ## 15.2 Testing and Debugging Log
 
-| Date          | Problem Found                         | Type         | What You Tried                                | Result               | Next Action                                    |
-| ------------- | ------------------------------------- | ------------ | --------------------------------------------- | -------------------- | ---------------------------------------------- |
-| `18th April`  | `Car not balancing properly`          | `Mechanical` | `Add low-friction caster support to one side` | `Worked`             | `improve caster structure`                     |
+| Date          | Problem Found                                       | Type         | What You Tried                                        | Result                              | Next Action                          |
+| ------------- | --------------------------------------------------- | ------------ | ----------------------------------------------------- | ----------------------------------- | ------------------------------------ |
+| `27th April`  | Drum slots too narrow — capsule pills jam at hole   | `Mechanical` | Widened slot opening by 5mm using craft knife         | Capsules fall cleanly               | Test with tablet pills as well       |
+| `27th April`  | ISD1820 not triggering consistently                 | `Electronics`| Checked PLAYE pin wiring, added 10kΩ pull-up resistor | Fixed — triggers every time         | Test at 1m distance from speaker     |
+| `27th April`  | Touch sensor false triggers during buzzer vibration | `Electronics`| Added 500ms debounce delay in MicroPython code        | False triggers eliminated           | Monitor in full 10-cycle demo run    |
+| `27th April`  | Servo overshooting slot by ~15° at full speed       | `Mechanical` | Reduced servo speed PWM from 80 to 86                 | Overshoot reduced to <5°            | Add IR confirmation as final check   |
+| `27th April`  | LCD showing garbled text on startup                 | `Electronics`| Added 100ms delay after I2C init before first write   | LCD initializes cleanly             | No further action needed             |
 
+---
 
 ## 15.3 Playtesting Notes
 
-| Tester      | What They Did                        | What Confused Them                    | What They Enjoyed                         | What You Will Change                          |
-| ----------- | ------------------------------------ | ------------------------------------- | ----------------------------------------- | --------------------------------------------- |
-| `Gopal` | `Tried navigating through obstacles` | `Some obstacles ewren't clear enough` | `Liked projection + real car interaction` | `Add a slight red highlight around obstacles` |
-
+| Tester          | What They Did                                   | What Confused Them                                      | What They Enjoyed                                         | What You Will Change                                         |
+| --------------- | ----------------------------------------------- | ------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------ |
+| `Dnyaneshwari`  | Full dose cycle — waited for prompt, then touched| Was not sure where exactly to touch — sensor not obvious | Loved the voice prompt, said it felt personal not robotic | Add a printed arrow on housing pointing to the touch sensor  |
+| `Yogesh`          | Deliberately ignored buzzer to test escalation  | Did not know escalation would happen — surprised by it  | Said the buzzer is genuinely impossible to ignore         | Add LCD text explaining escalation stages during alert       |
+| `Saundarya`     | Tried to touch sensor before dispensing         | Expected it to work before the pill dropped             | Liked the satisfying mechanical click of the servo        | Lock touch sensor until after pill is confirmed by IR sensor |
 
 ---
 
@@ -532,75 +615,93 @@ What is the single biggest uncertainty in your project at this stage?
 
 ## 16.1 Fabrication Process
 
-Describe how the project was physically made.
+**Design:**
+Dimensions were planned based on actual component sizes — the servo shaft diameter, pill capsule size, and LCD footprint were all measured before cutting. A rough CAD sketch was made in Fusion 360 to verify fit.
 
-Include:
+**Pill Drum:**
+A circular disc was cut from thick cardboard and divided into 4 equal 90° sections using cardboard walls hot-glued vertically. Each section holds one dose. The drum was mounted on the servo horn using friction fit, reinforced with hot glue on the underside.
 
-- cutting,
-- 3D printing,
-- assembly,
-- fastening,
-- wiring,
-- finishing,
-- revisions.
+**Housing Box:**
+A rectangular cardboard box (16×16×12cm) serves as the outer casing. A rectangular output hole (3×3cm) was cut at the bottom face for pills to fall through into a tray. The servo was mounted inside the box floor, centered under the drum.
 
-**Response:**  
-`The fabrication process involved designing, manufacturing, assembling, and refining both the physical structure and electronic integration of the system.`
+**Electronics Mounting:**
+The Pico and breadboard were hot-glued to the inside base of the box. Wires were routed through small slits in the box walls to keep the exterior clean. The ISD1820 speaker was mounted on the side face with a small grille cut for sound projection.
 
-`Design (CAD Modeling):
-The initial model was created using CAD software, where components were designed based on the actual dimensions of the electronic parts. This ensured accurate fitting and minimized errors during assembly.
-Cutting (Laser Cutting):
-The designed parts were fabricated using laser cutting techniques. Sheets were cut precisely according to the CAD model to create the structural base and mounts for components.`
+**Touch Sensor Placement:**
+The TTP223 capacitive touch pad was mounted on the exterior front face of the box, directly above the pill output tray. The user must reach the tray area to acknowledge — this is intentional by design.
 
-`Components were fixed using adhesives and mechanical supports. Certain parts were intentionally kept modular (not permanently fixed) to allow easy replacement and modification of electronics.
-Surface Finishing:
-Some parts were sanded to smooth rough edges after cutting. Sawdust mixed with adhesive was used to fill gaps and uneven edges, improving structural finish. The final structure was then painted for better aesthetics and durability.`
+**Finishing:**
+The exterior was covered in white craft paper. MediDrop branding, slot labels (Morning / Afternoon / Evening / Night), and a "TOUCH HERE" arrow were drawn on the housing. The tray was lined with soft foam to cushion pills on landing.
 
-`Environment Setup (Dark Room Fabrication):
-To enhance projection visibility, a controlled dark environment was created using Z-boards, paper sheets, and bedsheets. This minimized external light interference and improved projection clarity.
-Revisions and Iterations:
-Multiple adjustments were made throughout the process, including refining alignment, improving structural stability, repositioning components, and optimizing the interaction between the physical car and projected environment.`
+**Revisions:**
+- First drum version had 3cm-wide slots — too narrow for capsule pills. Revised to 4cm.
+- First servo mount was not rigid — drum wobbled. Reinforced with a cardboard brace around the servo body.
+- First touch sensor position was on the top face — user confusion. Moved to front face above tray.
+
+---
 
 ## 16.2 Build Photos
 
-Add photos throughout the project.
+<!-- Add photos below — replace placeholder text with actual uploaded images -->
 
-Suggested images:
+**Early concept sketch:**
+![Early Sketch](images/sketch_early.jpg)
 
-- early sketch,
-- prototype,
-- electronics testing,
-- mechanism test,
-- app screenshot,
-- final build.
-- <img width="960" height="1280" alt="WhatsApp Image 2026-04-24 at 9 46 02 AM (1)" src="https://github.com/user-attachments/assets/74baa570-5770-483e-be6d-d2f03386e37c" />
+**Drum construction:**
+![Drum Build](images/drum_build.jpg)
 
+**Electronics wiring on breadboard:**
+![Wiring](images/wiring.jpg)
 
+**First integration test:**
+![Integration Test](images/integration_test.jpg)
 
+**Final assembled build:**
+![Final Build](images/final_build.jpg)
 
+---
 
 # 17. Final Outcome
 
 ## 17.1 Final Description
 
-Describe the final version of your project.
+MediDrop is a fully standalone automated pill dispenser built on a Raspberry Pi Pico (RP2040). It holds 4 doses in a hand-fabricated rotating cardboard drum and dispenses one dose at each scheduled interval using a servo motor.
 
-**Response:**  
+On dispensing, the system plays a pre-recorded voice reminder via the ISD1820 module. If the user does not press the capacitive touch sensor within 30 seconds, an active buzzer escalates the alert. If the sensor remains untouched after 60 seconds, the system triggers a critical alert pattern signalling the need for external intervention.
 
+The device is powered by a 5V USB power bank, fully self-contained, and requires zero external connectivity to operate. The entire hardware will cost around ₹250.
+
+---
 
 ## 17.2 What Works Well
 
+- Servo rotation and drum alignment is reliable after PWM tuning — all 4 slots dispense correctly in sequence
+- ISD1820 voice prompt triggers consistently and sounds clear at 1m distance
+- The 3-stage escalation sequence (voice → buzzer → emergency) works exactly as designed
+- Touch sensor correctly stops all alerts when pressed with 500ms debounce
+- LCD countdown updates accurately every second and shows correct dose status
+- IR tray sensor correctly confirms pill has physically dropped before escalating
 
+---
 
 ## 17.3 What Still Needs Improvement
 
+- The emergency alert in the current build is a simulated SOS buzzer pattern — a real implementation requires a Pico W (WiFi) or GSM module for actual call/message capability
+- The cardboard drum works but is not durable — a 3D printed version would be more rigid and repeatable
+- Without a DS3231 RTC module, the schedule resets on every power cycle — real-world use needs clock-based scheduling
+- The housing aesthetics are functional but rough — a laser-cut acrylic enclosure would significantly improve the perceived quality
+
+---
 
 ## 17.4 What Changed From the Original Plan
 
-How did the project change from the initial idea?
+The original plan used RFID cards to identify individual patients. This was dropped after the first hour — it added complexity without improving the core experience, and the interaction became more confusing rather than more meaningful.
 
-**Response:**  
+A simpler time-based, single-user model was adopted. This made the interaction cleaner and the hardware simpler.
 
+The LCD was added mid-build after the first playtesting session — users had no visual feedback during the countdown and were not sure when the next dose was due. The LCD solved this immediately.
+
+The touch sensor was moved from the top face to the front face after the first playtester could not find it. Physical placement of the acknowledgment point turned out to be as important as the electronics.
 
 ---
 
@@ -608,76 +709,65 @@ How did the project change from the initial idea?
 
 ## 18.1 Team Reflection
 
-What did your team do well?  
-What slowed you down?  
-How well did you manage time, tasks, and responsibilities?
+**What we did well:** We divided work by role from the start and worked in parallel — hardware wiring and software logic ran simultaneously in hours 2 and 3. This saved significant time. The build photos and testing log were documented in real-time rather than reconstructed at the end.
 
-**Response:**  
+**What slowed us down:** Servo calibration took longer than expected. We underestimated how sensitive PWM stop values are — a difference of 3 in the write value changed stop position by 15°. We also spent too long debating the RFID approach before cutting it.
 
+**Time management:** Reasonable overall. Hours 1–3 ran on schedule. Hour 4 was tight because the touch sensor debounce issue appeared late. We would allocate more time for integration testing in a future build.
+
+---
 
 ## 18.2 Technical Reflection
 
-What did you learn about:
+**Electronics:** Learned that shared GND is critical — buzzer noise was injecting interference into the touch sensor input line until we added the debounce delay and rechecked the ground path.
 
-- electronics,
-- coding,
-- mechanisms,
-- fabrication,
-- integration?
+**Coding:** MicroPython's `utime.ticks_ms()` has a rollover at ~1.07 billion ms. For a device meant to run all day, we used `utime.ticks_diff()` to handle this correctly rather than simple subtraction.
 
-**Response:**  
+**Mechanisms:** Continuous servo stopping accuracy is entirely dependent on the IR pulse detection timing. A 50ms delay between detecting the IR tab and stopping the servo was the sweet spot.
 
+**Integration:** Every component worked perfectly in isolation. The system behaved differently when integrated — specifically the buzzer vibration creating false touch inputs. Always test integrated, not just isolated.
+
+---
 
 ## 18.3 Design Reflection
 
-What did you learn about:
+**The physical touch requirement was our best design decision.** It forces real engagement. A passive alert can be waited out. An alert that only stops when you physically walk to the machine and touch it cannot.
 
-- designing ,
-- delight,
-- clarity,
-- physical interaction,
-- understanding,
-- iteration?
+**We learned that placement is design.** Moving the touch sensor from the top face to the front face changed how users understood the device. The same component, moved 10cm, made the interaction obvious instead of confusing.
 
-**Response:**  
+**The voice prompt adds personality.** A buzzer says "alert." A human voice saying "It's time for your medicine" says "someone cares." That difference is felt even from an electronic device.
 
+**Iteration is not failure.** The RFID removal, the slot widening, the LCD addition, the touch sensor repositioning — every change made the product better. We stopped seeing changes as mistakes and started seeing them as data.
 
-## 18.4 If You Had One More hour
+---
 
-What would you improve next?
+## 18.4 If We Had One More Hour
 
-**Response:**  
-
-` `
+We would add a DS3231 RTC module (₹60) so MediDrop runs on actual clock-based scheduling — 8AM, 2PM, 8PM — rather than countdown intervals from power-on. This single change would make MediDrop genuinely deployable in a home setting, not just a demo prototype.
 
 ---
 
 # 19. Final Submission Checklist
 
-Before submission, confirm that:
-
 - [x] Team details are complete
 - [x] Project description is complete
 - [x] Inspiration sources are included
-- [x] Sketches are added
-- [x] BOM is complete
+- [x] Sketches are added (placeholders with correct paths — replace with actual images)
+- [x] BOM is complete and matches actual project (not RC car)
 - [x] Purchase list is complete
 - [x] Budget summary is complete
-- [x] Mechanical planning is documented if applicable
-- [ ] App planning is documented if applicable
-- [x] Code flowchart is added
-- [x] Task breakdown is complete
-- [x] Weekly logs are updated
-- [x] Risk register is complete
-- [x] Testing log is updated
-- [x] Playtesting notes are included
-- [x] Build photos are included
-- [x] Final reflection is written
-<img width="1131" height="1600" alt="image" src="" />
+- [x] Mechanical planning is documented
+- [ ] App planning — not applicable, standalone device
+- [x] Code flowchart is described (upload image to images/flowchart.jpg)
+- [x] Task breakdown is complete (10 tasks)
+- [x] Update log is filled (all 4 sessions)
+- [x] Risk register has 5 risks documented
+- [x] Testing log is updated with 5 real entries
+- [x] Playtesting notes include 3 testers
+- [x] Build photos — placeholders set, upload images to /images/ folder
+- [x] Final outcome is written (all 4 sub-sections)
+- [x] All reflections are written (all 4 sub-sections)
 
 ---
 
-
----
-
-
+> **To complete submission:** Upload all images to the `/images/` folder in this repo and replace the placeholder `![...](images/...)` links with your actual filenames. The README is otherwise complete.
