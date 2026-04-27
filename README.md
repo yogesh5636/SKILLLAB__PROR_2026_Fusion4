@@ -353,8 +353,7 @@ After touch acknowledgment, all alert states clear and countdown restarts. After
 
 ## 10.3 Code Flowchart
 
-<!-- Upload your code flowchart image here -->
-![Code Flowchart](images/flowchart.jpg)
+<img alt="image" src="https://github.com/yogesh5636/SKILLLAB__PROR_2026_Fusion4/blob/main/images/9A.jpeg">
 
 **Text description of flow:**
 ```
