@@ -137,6 +137,33 @@ What makes your project original?
 
 Describe exactly how a user will use the project.Make it a story
 **Response:**  
+MediDrop honestly didn’t start as a great idea. It started with a lot of confusion.
+
+In the beginning, we were trying out different concepts — some IoT-based, some automation-related — but nothing really felt right. We kept building ideas and then dropping them because they either felt too basic or didn’t solve anything meaningful. At one point, it felt like we were just wasting time going in circles.
+
+Then we changed the way we were thinking. Instead of asking “What can we build?”, we asked ourselves, “What’s something we’ve actually experienced that people ignore every day?” That’s when it clicked — taking medicines. It’s such a simple thing, but people forget it all the time, or worse, they ignore reminders because they’re too easy to dismiss.
+
+That’s where MediDrop came from.
+
+We didn’t want to create just another reminder. With the help of AI and multiple iterations, we started shaping it into something that doesn’t just notify you — it actually pushes you to act.
+
+So imagine this from a user’s point of view. You’re just going about your day, maybe busy with work or scrolling on your phone, and suddenly MediDrop activates. A small compartment rotates and your medicine is dispensed. At the same time, it calls out to you with a voice prompt — not like a boring alarm, but something that actually feels like it’s asking for your attention.
+
+If you respond, that’s it — simple and smooth.
+
+But if you ignore it… it doesn’t just give up.
+
+After a few seconds, a loud buzzer kicks in. Now it’s not just a reminder anymore — it’s annoying enough that you can’t just pretend it’s not there. To stop it, you actually have to get up, walk to the device, and touch it. That small action is important, because now you’re physically involved. You can’t just swipe it away like a phone notification.
+
+But here’s the real part — what if you still don’t respond?
+
+At that point, MediDrop assumes something might be wrong. Maybe you’re not nearby, maybe you’re unwell, or maybe something serious has happened. So instead of stopping, it takes the next step on its own. It sends an alert or makes a call to someone you trust — your family or a healthcare contact — letting them know that the medicine hasn’t been taken.
+
+So what started as a simple reminder slowly turns into something much more responsible.
+
+It begins in a light, almost playful way, but it doesn’t stay there. It keeps pushing, keeps escalating, and if needed, it even reaches out beyond the user. That’s what makes it different — it doesn’t just remind you, it makes sure the action actually happens.
+
+In the end, MediDrop isn’t just a device you use. It’s something that actively interacts with you, follows up, and takes responsibility when you don’t.
 
                                                   |
 
@@ -148,6 +175,7 @@ Describe exactly how a user will use the project.Make it a story
 
 ## 5.1 Definition of “Usable”
 
+A usable pill dispenser is a system that can reliably remind, dispense, and assist the user in taking medicine correctly without confusion or failure.
 
 
 ## 5.2 Minimum Usable Version
@@ -155,12 +183,25 @@ Describe exactly how a user will use the project.Make it a story
 What is the smallest version of this project that still delivers the core experience?
 
 **Response:**  
+The minimum usable version of this project is the simplest form of the system that can still do its main job—remind the user and dispense the medicine correctly.
 
+Core Requirements
+
+Even in its basic form, the system should be able to:
+
+Give a reminder at the required time
+Allow the user to respond or confirm
+Dispense one dose of medicine
+Provide some form of feedback (like a sound or indication)
 
 ## 5.3 Stretch Features
 
 What features are nice to have but not essential?
+MediDrop works well on its own, but there are a lot of things we could add to make it even better. For example, we could have a simple mobile app so users or family members can check if medicines are being taken and get alerts. We can also add Wi-Fi or GSM so it can send emergency messages on its own without depending on anything else.
 
+Another interesting upgrade would be making the system a bit smarter like learning the user’s habits and adjusting reminders based on that. We have used the medicine, along with battery backup so it still works during power cuts, and support for multiple medicines.
+
+These aren’t necessary for the basic working, but they show how MediDrop can grow into something much more advanced over time.
 
 ---
 
@@ -176,21 +217,21 @@ Check all that apply.
 
 - [x] Sensor-based
 
-- [x] App-connected
+- [ ] App-connected
 
 - [x] Motorized
 
-- [ ] Sound-based
+- [x] Sound-based
 
-- [x] Light-based
+- [ ] Light-based
 
 - [x] Screen/UI-based
 
 - [x] Fabricated structure
 
-- [x] Game logic based
+- [ ] Game logic based
 
-- [x] Installation
+- [ ] Installation
 
 - [ ] Other:
 
