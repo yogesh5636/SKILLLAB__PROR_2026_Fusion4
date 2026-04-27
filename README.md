@@ -21,7 +21,7 @@
 
 ## 1.3 Project Title
 
-### MediDrop
+### MedDrop
 
 > *Your personal, automated medication dispenser — with a personality that refuses to be ignored.*
 
