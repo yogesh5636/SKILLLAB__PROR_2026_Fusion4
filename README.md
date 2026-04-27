@@ -14,7 +14,7 @@
 | `Yogesh Harwani` | `[Coding]` | `Documentation / Electronics`  | `Documentation`|
 | `Dnyaneshwari Joshi`  | `[Electronics / Fabrication]`   | `[Coding]`     | `Material Handling, Hardware`    |
 | `Saundarya Daware`  | `[Electronics / Fabrication]`   | `[Coding]`     | `Material Handling, Hardware`    |
-| `Anuj Jakkar`  | `[Electronics / Fabrication]`   | `[Coding]`     | `Material Handling, Hardware`    |
+| ``  | `[Electronics / Fabrication]`   | `[Coding]`     | `Material Handling, Hardware`    |
 
 ## 1.3 Project Title
 
