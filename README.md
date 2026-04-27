@@ -209,7 +209,7 @@ MediDrop works as a staged input–process–output system with a physical inter
 Early rough sketch of the full idea — drum mechanism, housing, and user interaction point.
 
 <!-- Upload your concept sketch photo here -->
-<img alt="image" src="https://github.com/user-attachments/assets/c64bfbd4-b3b7-43d9-83ad-c203a5aa11bc" />
+<img alt="image" src="[https://github.com/user-attachments/assets/c64bfbd4-b3b7-43d9-83ad-c203a5aa11bc](https://github.com/yogesh5636/SKILLLAB__PROR_2026_Fusion4/blob/main/images/7A.jpeg)" />
 
 ---
 
