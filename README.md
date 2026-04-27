@@ -272,8 +272,7 @@ The Raspberry Pi Pico is the central controller. All components connect directly
 
 ## 8.3 Circuit Diagram
 
-<!-- Upload your circuit diagram here — hand-drawn photo is fine -->
-![Circuit Diagram](images/circuit_diagram.jpg)
+<img alt="image" src="https://github.com/yogesh5636/SKILLLAB__PROR_2026_Fusion4/blob/main/images/8A.jpeg">
 
 ---
 
