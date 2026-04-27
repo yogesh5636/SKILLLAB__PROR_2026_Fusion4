@@ -25,7 +25,7 @@
 
 > *Your personal, automated medication dispenser — with a personality that refuses to be ignored.*
 
-<img width="1600" height="1131" alt="product image" src="" />
+<img width="1600" height="1131" alt="product image" src="https://github.com/yogesh5636/SKILLLAB__PROR_2026_Fusion4/blob/main/images/1A.jpeg" />
 
 ---
 
